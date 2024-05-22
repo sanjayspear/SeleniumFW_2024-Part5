@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="4">
+<listeners>
+        <listener class-name="com.dhruv.helper.Listener" />
+</listeners>
+<parameter name="username" value="rahul"></parameter>
+<parameter name="password" value="rahulshettyscademy"></parameter>
+  <test name="Test">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.dhruv.tests.LoginTest_003"/>
+      <class name="com.dhruv.tests.LoginTest_001"/>
+      <class name="com.dhruv.tests.LoginTest_002"/>
+      <class name="com.dhruv.tests.DropdownTest_004"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

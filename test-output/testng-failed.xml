@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowserTestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.dhruv.helper.Listener"/>
+  </listeners>
+  <test name="ChromeTests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.dhruv.tests.LoginTest_003">
+        <methods>
+          <include name="setUp"/>
+          <include name="successfulLoginTest"/>
+          <include name="tearDown"/>
+          <include name="configureLog4j"/>
+        </methods>
+      </class> <!-- com.dhruv.tests.LoginTest_003 -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTestSuite] -->

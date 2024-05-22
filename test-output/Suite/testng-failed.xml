@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="rahulshettyscademy"/>
+  <parameter name="username" value="rahul"/>
+  <listeners>
+    <listener class-name="com.dhruv.helper.Listener"/>
+  </listeners>
+  <test parallel="classes" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.dhruv.tests.LoginTest_003">
+        <methods>
+          <include name="setUp"/>
+          <include name="successfulLoginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="configureLog4j"/>
+          <include name="validateForTheLoginBtnTextAndPracticeBtnText"/>
+        </methods>
+      </class> <!-- com.dhruv.tests.LoginTest_003 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

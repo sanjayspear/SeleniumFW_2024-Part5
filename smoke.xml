@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="com.dhruv.helper.Listeners"></listener>
+</listeners>
+<parameter name="username" value="test"></parameter>
+<parameter name="password" value="rahulshettyscademy"></parameter>
+  <test name="Test">
+    <classes>
+      <!-- Only running specific methods from LoginTest_003 -->
+      <class name="com.dhruv.tests.LoginTest_003">
+        <methods>
+          <include name="successfulLoginTest"/>
+          <!-- Exclude methods if necessary -->
+          <!-- <exclude name="forgotPasswordTest"/> -->
+          <!-- <exclude name="successfulLoginTest"/> -->
+        </methods>
+      </class>
+      <!-- Explicitly excluding entire classes (alternative to just removing them) -->
+      <!-- <class name="com.dhruv.tests.LoginTest_001">
+        <methods>
+          <exclude name="*"/>
+        </methods>
+      </class>
+      <class name="com.dhruv.tests.LoginTest_002">
+        <methods>
+          <exclude name="*"/>
+        </methods>
+      </class> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

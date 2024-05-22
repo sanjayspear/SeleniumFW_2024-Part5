@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.dhruv.tests.DropdownTest_004">
+        <methods>
+          <include name="currencyDrodownTest"/>
+          <include name="setUp"/>
+          <include name="passengerDrodownTest"/>
+          <include name="testAutoSuggestiveCountryDD"/>
+          <include name="tearDown"/>
+          <include name="configureLog4j"/>
+          <include name="testDropdownSelection"/>
+        </methods>
+      </class> <!-- com.dhruv.tests.DropdownTest_004 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

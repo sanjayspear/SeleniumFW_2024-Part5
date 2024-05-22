@@ -1,0 +1,1 @@
+{"uuid":"ac32cb93-e737-487b-baaf-dfafc929217d","name":"CrossBrowserTestSuite","children":["79213acb-53dd-4ec6-854d-18291b7d8c26"],"befores":[{"name":"configureLog4j","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1716287820485,"stop":1716287820489}],"afters":[],"start":1716287820466,"stop":1716287904443}
